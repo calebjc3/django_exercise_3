@@ -1,0 +1,1 @@
+readme file for django_exercise_3.
