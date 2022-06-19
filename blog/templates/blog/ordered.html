@@ -1,0 +1,18 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'blog/styles.css' %}">
+
+<h2>Posts Ordered by Created Date:</h2>
+
+{% if post_list %}
+  <ul>
+  {% for post in post_list %}
+    <li>{{ post.title }}</li>
+    <a href="{% url 'blog:update' post.id %}">edit</a>
+    <a href="{% url 'blog:delete' post.id %}">delete</a>
+  {% endfor %}
+  </ul>
+{% else %}
+  <p>No posts available.</p>
+{% endif %}
+<a class = "home" href="{% url 'blog:index' %}">CLICK HERE to Return Home</a>

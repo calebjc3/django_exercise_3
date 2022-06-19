@@ -1,0 +1,17 @@
+ul {
+    color:darksalmon;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
+h2 {
+    color:darkgreen;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    background: white url("images/img.jpg") no-repeat center;
+    background-size: cover;
+}
+.create, .filter, .order, .filterorder {
+    color:bisque;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
